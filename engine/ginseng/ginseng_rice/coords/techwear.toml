@@ -1,0 +1,52 @@
+[coord]
+name = "techwear"
+label = "テック"
+dark = true
+wear = "Triage. Tonal black, one signal color, everything dense."
+
+[palette]
+paper = "#090A0C"
+panel = "#111315"
+ink = "#CBCED1"
+muted = "#898C90"
+rule = "#3B3D40"
+focus = "#FCFCFC"
+accent = "#FF7E2D"
+band_outer = "#242527"
+band_inner = "#3E4042"
+median = "#F5F5F5"
+floor = "#FF7E2D"
+safe = "#A0A5AB"
+thin = "#FCFCFC"
+short = "#FF7E2D"
+inflow = "#CBCED1"
+outflow = "#898C90"
+opt_credit = "#BEBEBE"
+opt_liquidate = "#868686"
+opt_hybrid = "#F5F5F5"
+opt_protective = "#9E9E9E"
+stamp = "#FF7E2D"
+ornament = "#3B3D40"
+
+[borders]
+panel = "solid"
+focus = "round"
+trim = "╱"
+title_left = "[ "
+title_right = " ]"
+
+[glyphs]
+gauge_on = "▮"
+gauge_off = "▯"
+pick = "⌁"
+band_outer = "░"
+voice_mark = "⌁"
+
+[motion]
+henshin_frames = 4
+henshin_ms = 240
+
+[voice]
+calm = "RSV NOMINAL / P95 HOLDS D{h} / NO ACTION"
+thin = "GAP {rlr} @P95 / SOLVENT {sol}D / CHEAPEST {C0_NAME} {c0}"
+short = "SHORTFALL {sp} / P95 LASTS {sol}D / FUND {rlr} NOW"

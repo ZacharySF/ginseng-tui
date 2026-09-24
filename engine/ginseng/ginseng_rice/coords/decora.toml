@@ -1,0 +1,52 @@
+[coord]
+name = "decora"
+label = "デコラ"
+dark = false
+wear = "Good months. Maximal on purpose, and the first to undress when numbers turn."
+
+[palette]
+paper = "#FFF3FA"
+panel = "#F8E6FC"
+ink = "#352053"
+muted = "#644D75"
+rule = "#DCA0D6"
+focus = "#A73189"
+accent = "#116BB5"
+band_outer = "#BBECEE"
+band_inner = "#85DBC4"
+median = "#352053"
+floor = "#900027"
+safe = "#006483"
+thin = "#895E00"
+short = "#900027"
+inflow = "#00627C"
+outflow = "#644D75"
+opt_credit = "#0465AF"
+opt_liquidate = "#9E3081"
+opt_hybrid = "#006755"
+opt_protective = "#8A4B00"
+stamp = "#900027"
+ornament = "#D582CE"
+
+[borders]
+panel = "round"
+focus = "round"
+trim = "✦  ⋆   ✧ ⊹    ✿  ⋆  "
+title_left = "✧ "
+title_right = " ✧"
+
+[glyphs]
+gauge_on = "▰"
+gauge_off = "▱"
+pick = "✦"
+band_outer = "░"
+voice_mark = "✧"
+
+[motion]
+henshin_frames = 4
+henshin_ms = 240
+
+[voice]
+calm = "only {sp} of paths dip below $0 ✦ reserve covered ✦"
+thin = "so close ✧ just {rlr} short at p95, {c0_name} fixes it for ~{c0}"
+short = "Shortfall likely. {sp} of paths dip below $0. At p95, cash lasts {sol} days. Add {rlr} to hold."

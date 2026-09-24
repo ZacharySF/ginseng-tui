@@ -1,0 +1,52 @@
+[coord]
+name = "sakura"
+label = "桜のアトリエ"
+dark = true
+wear = "Sakura after midnight. Rose ribbons, lavender ink, and a notebook full of evidence."
+
+[palette]
+paper = "#14111F"
+panel = "#211B30"
+ink = "#F4EAF5"
+muted = "#B6A7C5"
+rule = "#514260"
+focus = "#F3AACB"
+accent = "#BDB5F5"
+band_outer = "#30253F"
+band_inner = "#5C416D"
+median = "#F4EAF5"
+floor = "#FF777F"
+safe = "#77CCE6"
+thin = "#A484DA"
+short = "#FF777F"
+inflow = "#9EE1C0"
+outflow = "#B6A7C5"
+opt_credit = "#98C9FF"
+opt_liquidate = "#F3AACB"
+opt_hybrid = "#9EE1C0"
+opt_protective = "#F0D5A1"
+stamp = "#FF777F"
+ornament = "#BA7FAD"
+
+[borders]
+panel = "round"
+focus = "round"
+trim = ".  *  .   +   "
+title_left = "* "
+title_right = " *"
+
+[glyphs]
+gauge_on = "━"
+gauge_off = "─"
+pick = ">"
+band_outer = "░"
+voice_mark = "*"
+
+[motion]
+henshin_frames = 4
+henshin_ms = 240
+
+[voice]
+calm = "* A quiet sky. {sp} of modeled paths cross below zero through day {h}."
+thin = "* A little care: add {rlr} at p95. {c0_name} costs about {c0}."
+short = "Shortfall in {sp} of modeled paths. At p95, cash lasts {sol} days. Add {rlr}."

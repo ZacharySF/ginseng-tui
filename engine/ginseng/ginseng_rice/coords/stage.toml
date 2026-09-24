@@ -1,0 +1,52 @@
+[coord]
+name = "stage"
+label = "ヴィジュアル系"
+dark = true
+wear = "Projectors and demo day. Okabe–Ito colors, the loudest contrast in the set."
+
+[palette]
+paper = "#000000"
+panel = "#090909"
+ink = "#FFFFFF"
+muted = "#BEBEBE"
+rule = "#696969"
+focus = "#56B4E9"
+accent = "#D55E00"
+band_outer = "#242424"
+band_inner = "#2E4B60"
+median = "#FFFFFF"
+floor = "#D55E00"
+safe = "#56B4E9"
+thin = "#F0E442"
+short = "#D55E00"
+inflow = "#56B4E9"
+outflow = "#BEBEBE"
+opt_credit = "#56B4E9"
+opt_liquidate = "#CC79A7"
+opt_hybrid = "#009E73"
+opt_protective = "#E69F00"
+stamp = "#D55E00"
+ornament = "#CC79A7"
+
+[borders]
+panel = "heavy"
+focus = "heavy"
+trim = "━"
+title_left = " "
+title_right = " "
+
+[glyphs]
+gauge_on = "█"
+gauge_off = "░"
+pick = "▸"
+band_outer = "░"
+voice_mark = "▸"
+
+[motion]
+henshin_frames = 4
+henshin_ms = 240
+
+[voice]
+calm = "{h} DAYS COVERED AT P95."
+thin = "RESERVE GAP {rlr} AT P95. {C0_NAME} CLOSES IT FOR {c0}."
+short = "SHORTFALL LIKELY: {sp}. FUND {rlr} BEFORE DAY {sol1}."

@@ -1,0 +1,25 @@
+/* ginseng_rice: role-based classes. Everything is prefixed g- so it can't collide with your app. */
+
+Screen { background: $g-paper; color: $g-ink; }
+
+.g-panel {
+    border: solid $g-rule;
+    border-title-color: $g-ink;
+    border-title-style: bold;
+    background: $g-paper;
+    padding: 0 1;
+}
+.g-panel:focus-within { border: double $g-focus; }
+
+.g-muted { color: $g-muted; }
+.g-safe  { color: $g-safe; }
+.g-thin  { color: $g-thin; }
+.g-short { color: $g-short; text-style: bold; }
+.g-hatch { hatch: right $g-band-outer 40%; }
+
+/* Ornament budget. Dressable.report_shortfall() puts -ornate-N on every screen. */
+Screen.-ornate-2 .g-ornament-3 { display: none; }
+Screen.-ornate-1 .g-ornament-2, Screen.-ornate-1 .g-ornament-3 { display: none; }
+Screen.-ornate-0 .g-ornament, Screen.-ornate-0 .g-ornament-2, Screen.-ornate-0 .g-ornament-3, Screen.-ornate-0 Trim { display: none; }
+Screen.-ornate-0 .g-panel { border: heavy $g-ink; }
+Screen.-ornate-0 .g-hatch { hatch: none; }

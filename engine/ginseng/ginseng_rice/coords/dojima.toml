@@ -1,0 +1,52 @@
+[coord]
+name = "dojima"
+label = "堂島"
+dark = true
+wear = "Chart review. Indigo cloth, vermilion seals, beads for days."
+
+[palette]
+paper = "#0F1D38"
+panel = "#182846"
+ink = "#F1EBDE"
+muted = "#A3B3C4"
+rule = "#465C7D"
+focus = "#F8C655"
+accent = "#FD6A3A"
+band_outer = "#253A58"
+band_inner = "#335B83"
+median = "#F1EBDE"
+floor = "#FD6A3A"
+safe = "#85D5AB"
+thin = "#F8C655"
+short = "#FD6A3A"
+inflow = "#85D5AB"
+outflow = "#A3B3C4"
+opt_credit = "#61C1ED"
+opt_liquidate = "#F5B076"
+opt_hybrid = "#A6E5C2"
+opt_protective = "#E5B2F0"
+stamp = "#FD6940"
+ornament = "#A3885A"
+
+[borders]
+panel = "heavy"
+focus = "double"
+trim = "◠◡"
+title_left = "┫ "
+title_right = " ┣"
+
+[glyphs]
+gauge_on = "◉"
+gauge_off = "◌"
+pick = "◉"
+band_outer = "░"
+voice_mark = "◉"
+
+[motion]
+henshin_frames = 4
+henshin_ms = 240
+
+[voice]
+calm = "帳尻 balanced: reserve holds at p95 through day {h}."
+thin = "帳尻 short {rlr} at p95; {c0_name} settles it for about {c0}."
+short = "帳尻 short: {sp} of paths below $0, p95 cash lasts {sol} days. Fund {rlr}."

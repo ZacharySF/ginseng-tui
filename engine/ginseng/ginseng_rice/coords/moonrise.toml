@@ -1,0 +1,52 @@
+[coord]
+name = "moonrise"
+label = "月光 / Moonrise"
+dark = true
+wear = "Moonlit magical-girl workstation. Navy, lavender and lunar gold."
+
+[palette]
+paper = "#101426"
+panel = "#1B2136"
+ink = "#F4EAF5"
+muted = "#B6A7C5"
+rule = "#56607A"
+focus = "#F5D995"
+accent = "#D1B4FA"
+band_outer = "#1B2136"
+band_inner = "#56607A"
+median = "#F4EAF5"
+floor = "#FF777F"
+safe = "#77CCE6"
+thin = "#A484DA"
+short = "#FF777F"
+inflow = "#9EE1C0"
+outflow = "#B6A7C5"
+opt_credit = "#98C9FF"
+opt_liquidate = "#F5D995"
+opt_hybrid = "#9EE1C0"
+opt_protective = "#F0D5A1"
+stamp = "#FF777F"
+ornament = "#F5D995"
+
+[borders]
+panel = "round"
+focus = "round"
+trim = ".   *   +   "
+title_left = "+ "
+title_right = " +"
+
+[glyphs]
+gauge_on = "━"
+gauge_off = "─"
+pick = ">"
+band_outer = "░"
+voice_mark = "+"
+
+[motion]
+henshin_frames = 4
+henshin_ms = 200
+
+[voice]
+calm = "* A quiet sky. {sp} of modeled paths cross below zero through day {h}."
+thin = "* A little care: add {rlr} at p95. {c0_name} costs about {c0}."
+short = "Shortfall in {sp} of modeled paths. At p95, cash lasts {sol} days. Add {rlr}."

@@ -1,0 +1,276 @@
+/* One identity throughout: deep water, smoky silver and softly reflected blue-green light.
+   All surfaces are opaque so terminal profiles cannot change the palette. */
+Screen { background: $g-paper; color: $g-ink; }
+* {
+    scrollbar-size: 1 1;
+    scrollbar-color: $g-rule;
+    scrollbar-color-hover: $g-focus;
+    scrollbar-color-active: $g-accent;
+    scrollbar-background: $g-paper;
+    scrollbar-corner-color: $g-paper;
+}
+#telemetry {
+    height: 3; padding: 0 1; background: $g-panel;
+    border-bottom: solid $g-rule; text-wrap: nowrap; text-overflow: clip;
+}
+#workspace { height: 1fr; }
+#sidebar {
+    width: 30; padding: 0 1; background: $g-panel;
+    border: none; border-right: solid $g-rule;
+}
+#sidebar:focus-within { border-right: solid $g-focus; }
+#sidebar-brand {
+    height: 4; padding-top: 1; color: $g-focus;
+    text-style: bold; content-align: left middle;
+}
+Portrait { height: auto; content-align: center top; margin: 0 0 1 0; }
+OperatorPanel { height: auto; margin-bottom: 1; border-top: solid $g-rule; }
+#nav { height: 18; padding: 0; border: none; background: $g-panel; }
+#nav > .option-list--option { padding: 0; }
+#nav > .option-list--option-highlighted {
+    background: $g-band-outer; color: $g-ink; border-left: solid $g-focus;
+}
+#body { padding: 0; background: $g-paper; }
+#body > * { border: none; background: $g-paper; padding: 1 2; }
+.rule { color: $g-focus; margin-top: 1; text-style: none; }
+.banner { color: $g-ink; text-style: bold; }
+.hint { color: $g-ink; margin-top: 1; }
+.prompt { color: $g-safe; margin-top: 1; }
+.field-label { color: $g-muted; }
+.field-row { height: auto; }
+.field-col { width: 1fr; height: auto; margin-right: 1; }
+.mono-dim { color: $g-muted; }
+.mono-block { color: $g-ink; }
+.tier-high { color: $g-short; }
+.welcome-copy { height: auto; margin: 1 0; color: $g-ink; }
+.rice-gallery { height: auto; margin: 1 0; padding: 1; background: $g-panel; }
+
+Input, Select { height: 3; margin: 0; }
+Input, SelectCurrent {
+    border: none; border-bottom: solid $g-rule;
+    background: $g-panel; color: $g-ink;
+}
+Input:focus, Select:focus > SelectCurrent {
+    border-bottom: solid $g-focus; background: $g-band-outer;
+}
+SelectOverlay { background: $g-panel; border: solid $g-rule; color: $g-ink; }
+SelectOverlay > .option-list--option-highlighted { background: $g-band-outer; color: $g-ink; }
+Button, Button.-style-default {
+    height: 3; min-width: 12; width: auto; padding: 0 1; margin-right: 1;
+    border: solid $g-rule; background: $g-panel; color: $g-focus;
+}
+Button.-primary, Button.-style-default.-primary {
+    background: $g-band-outer; color: $g-focus; border: solid $g-focus 65%;
+}
+Button.-style-default.-success { color: $g-safe; background: $g-panel; }
+Button:hover, Button:focus {
+    border: solid $g-focus; background: $g-band-outer; color: $g-ink; text-style: none;
+}
+Button:disabled { opacity: 50%; }
+DataTable { height: 1fr; background: $g-panel; color: $g-ink; }
+DataTable > .datatable--header { background: $g-band-outer; color: $g-focus; text-style: bold; }
+DataTable > .datatable--cursor { background: $g-band-inner; color: $g-ink; }
+DataTable > .datatable--odd-row { background: $g-panel; }
+DataTable > .datatable--even-row { background: $g-paper; }
+TextArea { background: $g-panel; color: $g-ink; border: solid $g-rule; }
+TextArea:focus { border: solid $g-focus; }
+TextArea > .text-area--gutter { background: $g-paper; color: $g-muted; }
+TextArea > .text-area--cursor-line { background: $g-band-outer; }
+TextArea > .text-area--selection { background: $g-band-inner; }
+Tab { color: $g-muted; background: $g-paper; }
+Tab.-active { color: $g-focus; background: $g-panel; }
+Underline { color: $g-rule; background: $g-paper; }
+Underline > .underline--bar { color: $g-focus; }
+
+/* Research, saved runs and numerical views share the same surfaces. */
+.studio-picker { height: 3; margin-top: 1; }
+#studio-search { width: 1fr; margin-right: 1; }
+#studio-operation { width: 2fr; }
+#studio-description { height: auto; max-height: 5; padding: 1 0; color: $g-muted; }
+#studio-tabs, #studio-tabs ContentSwitcher { height: 1fr; }
+#studio-recipe, #studio-results, #studio-notebook { height: 1fr; padding: 1 0 0 0; }
+#studio-params { height: 1fr; min-height: 5; }
+.studio-actions { height: 3; margin-top: 1; }
+#studio-status { height: auto; max-height: 4; color: $g-focus; padding: 1 0 0 0; }
+#studio-summary { height: auto; padding: 1; margin-bottom: 1; border: solid $g-rule; background: $g-panel; }
+#studio-atlas { height: auto; margin: 1 0; padding: 1; border: solid $g-rule; }
+#studio-table { height: 16; margin-top: 1; border: solid $g-rule; }
+#studio-json { height: 20; margin-top: 1; }
+#studio-notebook-table { height: 1fr; min-height: 4; }
+#studio-import-path { margin-top: 1; }
+#studio-result-scroll { height: 1fr; }
+#studio-quick { height: auto; max-height: 14; margin: 0 0 1 0; padding: 0; border: none; background: $g-panel; }
+.quick-fields { height: 4; }
+#studio-route { margin-bottom: 1; }
+#studio-results .studio-actions Button { width: 1fr; }
+#surface-row { height: auto; margin-top: 1; }
+.surface-col { width: 1fr; height: auto; margin-right: 1; }
+#log-pane { height: auto; border: none; border-top: solid $g-rule; padding: 0 1; margin-top: 1; }
+#event-log { height: auto; }
+#panel-result Dashboard { height: auto; min-height: 29; }
+.g-panel { background: $g-panel; border: solid $g-rule; }
+.g-panel:focus-within { border: solid $g-focus; }
+#cash-signals { height: auto; margin: 1 0; }
+PathSignals, FundingBars {
+    width: 1fr; height: auto; padding: 1;
+    border: solid $g-rule; background: $g-panel;
+}
+PathSignals { margin-right: 1; }
+TableVisual { height: auto; margin-top: 1; padding: 0 1 1 1; border: solid $g-rule; }
+.plot-controls { height: 3; margin: 1 0; }
+.plot-controls Select { width: 1fr; }
+#plot-x { margin-right: 1; }
+ResearchPlot { height: 13; text-wrap: nowrap; }
+
+Footer { background: $g-panel; color: $g-muted; }
+FooterKey { background: $g-panel; }
+FooterKey > .footer-key--key { background: $g-panel; color: $g-focus; }
+Footer, FooterKey { scrollbar-size: 0 0; overflow-y: hidden; }
+CommandPalette { background: $g-paper 85%; }
+CommandPalette > Vertical { background: $g-panel; border: solid $g-rule; }
+CommandPalette #--input { border: none; border-bottom: solid $g-rule; background: $g-panel; }
+CommandPalette #--input.--list-visible { border-bottom: solid $g-focus; }
+#boot-frame, #boot-log { scrollbar-size: 0 0; }
+
+#boot-art { color: $g-focus; }
+Screen.-urgent-thin #telemetry { border-bottom: solid $g-thin; }
+Screen.-urgent-short #telemetry { border-bottom: solid $g-short; }
+Screen.-urgent-short #sidebar { border-right: solid $g-short; }
+Screen.-compact #body > * { padding: 0 1; }
+Screen.-compact .studio-picker { height: 6; layout: vertical; }
+Screen.-compact #studio-search, Screen.-compact #studio-operation { width: 1fr; }
+Screen.-compact #studio-description { max-height: 4; }
+Screen.-compact .studio-actions Button { min-width: 8; padding: 0; margin-right: 0; }
+Screen.-compact #cash-signals { layout: vertical; }
+Screen.-compact PathSignals { margin: 0 0 1 0; }
+Screen.-compact .plot-controls { layout: vertical; height: 6; }
+Screen.-short #studio-description { max-height: 2; padding: 0; }
+Screen.-short #studio-status { height: 1; padding: 0; }
+Screen.-short .studio-picker { height: 3; layout: horizontal; margin-top: 0; }
+Screen.-short #studio-search { width: 1fr; }
+Screen.-short #studio-operation { width: 2fr; }
+Screen.-short #studio-quick { margin: 0; }
+Screen.-short #studio-recipe { padding: 0; }
+Screen.-short #studio-recipe > Static { display: none; }
+
+Screen.-tiny FooterKey.-command-palette { display: none; }
+Screen.-short .welcome-copy { margin: 0 0 1 0; }
+
+/* Instrument workspace: narrow rail / primary canvas / live readouts. */
+#telemetry { height: 2; background: $g-paper; padding: 0 1; }
+#sidebar { width: 17; padding: 0 1; background: $g-paper; }
+#sidebar-brand { height: 3; padding: 0; color: $g-focus; }
+#nav { height: auto; background: $g-paper; }
+#nav > .option-list--option { padding: 0; }
+#nav > .option-list--option-highlighted {
+    color: $g-focus; background: $g-panel; border-left: solid $g-focus;
+}
+#body > * { padding: 0 1; }
+#inspector { width: 36; padding: 0 1 0 0; background: $g-paper; }
+.instrument-panel {
+    border: solid $g-rule; background: $g-panel; padding: 0 1;
+    border-title-color: $g-muted; border-title-style: none;
+}
+.instrument-panel:focus-within { border: solid $g-focus 60%; }
+.panel-heading {
+    height: 1; color: $g-muted; text-wrap: nowrap;
+    text-overflow: ellipsis; margin: 0 0 1 0;
+}
+OperatorPanel { height: auto; margin: 0 0 1 0; }
+#session-readout { height: 10; margin-bottom: 1; }
+#session-risk { height: 8; margin-bottom: 1; }
+#inspector-art { height: auto; margin-bottom: 1; }
+#inspector-art .panel-heading { margin: 0 0 1 0; }
+#portrait-viewport { width: 1fr; height: auto; }
+Portrait { height: auto; margin: 0; }
+#session-events { height: auto; min-height: 6; color: $g-muted; }
+#session-tape {
+    height: 2; padding: 0 1; border-top: solid $g-rule;
+    background: $g-paper; color: $g-muted; text-wrap: nowrap; text-overflow: ellipsis;
+}
+#panel-welcome { height: 1fr; }
+#home-canvas { height: 1fr; min-height: 11; padding: 0 1; overflow: hidden; }
+#workflow-panel { height: 13; margin-top: 1; }
+#workflow-panel .panel-heading { margin: 0; }
+#home-workflows { height: 8; }
+.desk-actions { height: 1; margin-top: 1; }
+.desk-actions Button { width: 1fr; }
+Button, Button.-style-default {
+    height: 1; min-width: 10; border: none; background: $g-band-outer;
+    color: $g-focus; padding: 0 1; text-style: none;
+}
+Button.-primary, Button.-style-default.-primary {
+    border: none; color: $g-paper; background: $g-focus;
+}
+Button:focus, Button:hover { border: none; text-style: bold; background: $g-band-inner; color: $g-ink; }
+Input, Select { height: 3; }
+Input, SelectCurrent { background: $g-paper; }
+DataTable > .datatable--header { background: $g-panel; color: $g-muted; text-style: none; }
+DataTable > .datatable--cursor { background: $g-band-outer; color: $g-focus; }
+DataTable > .datatable--even-row { background: $g-panel; }
+#simulation-setup { height: auto; margin-bottom: 1; }
+.setup-panel { width: 1fr; height: auto; margin-right: 1; padding-bottom: 1; }
+.setup-panel .rule { margin: 0 0 1 0; }
+.field-row { margin-top: 1; }
+#panel-form > .hint { margin: 1 0; }
+#panel-form > .rule { margin: 0; }
+#surface-row { height: 18; margin: 0 0 1 0; }
+.surface-col { height: 1fr; width: 2fr; margin-right: 1; }
+#draw-panel { width: 1fr; margin-right: 0; }
+VolSurface, IndexRain { height: 1fr; }
+#panel-result Dashboard { min-height: 29; }
+#cash-signals { margin-top: 0; }
+#log-pane { margin-top: 0; margin-bottom: 1; }
+.studio-picker { margin-top: 0; }
+#studio-description { max-height: 3; padding: 0; margin-bottom: 1; }
+#studio-recipe, #studio-results, #studio-notebook { padding-top: 0; }
+.studio-actions { height: 1; margin-top: 1; }
+#studio-status { max-height: 2; padding: 0; margin-top: 1; }
+#studio-quick { margin-bottom: 1; }
+#studio-analysis { height: auto; }
+#studio-evidence { width: 2fr; height: auto; margin-right: 1; }
+#studio-findings { width: 1fr; height: 26; }
+#studio-summary { height: auto; border: none; padding: 0; margin: 0; background: $g-panel; }
+#studio-table { height: 15; margin-top: 0; border: none; }
+#studio-atlas { border: none; padding: 0; }
+#studio-json { height: 16; }
+#studio-visual { border: none; padding: 0; }
+.plot-controls { margin: 0; }
+#art-workbench { height: auto; }
+.rice-gallery { width: 2fr; height: auto; min-height: 20; margin: 0 1 0 0; padding: 1; }
+#art-controls { width: 1fr; height: auto; min-width: 24; }
+#art-controls .welcome-copy { margin: 1 0; }
+#panel-history { border: solid $g-rule; }
+#history-table { height: 1fr; }
+#history-empty { height: auto; margin: 1 0; }
+Footer, FooterKey, FooterKey > .footer-key--key { background: $g-paper; }
+
+/* Small terminals keep the same workspaces and stack their instruments. */
+Screen.-compact #nav > .option-list--option { padding: 0; }
+Screen.-compact #sidebar-brand { height: 2; }
+Screen.-compact #workflow-panel { height: 12; }
+Screen.-compact #simulation-setup { layout: vertical; }
+Screen.-compact .setup-panel { width: 1fr; margin: 0 0 1 0; }
+Screen.-compact #studio-analysis { layout: vertical; }
+Screen.-compact #studio-evidence { width: 1fr; margin: 0; }
+Screen.-compact #studio-findings { width: 1fr; height: auto; max-height: 18; margin-top: 1; }
+Screen.-compact #art-workbench { layout: vertical; }
+Screen.-compact .rice-gallery { width: 1fr; min-height: 10; margin: 0 0 1 0; }
+Screen.-compact #art-controls { width: 1fr; }
+Screen.-compact #surface-row { layout: vertical; height: 28; }
+Screen.-compact .surface-col { width: 1fr; height: 16; margin: 0; }
+Screen.-compact #draw-panel { width: 1fr; height: 12; }
+Screen.-short #home-canvas { display: none; }
+Screen.-short #workflow-panel { height: 1fr; margin-top: 0; }
+Screen.-short #home-workflows { height: 1fr; min-height: 6; }
+Screen.-short #session-tape { height: 1; border: none; }
+Screen.-short .studio-picker { margin-top: 0; }
+
+Screen.-short #panel-studio > .panel-heading { display: none; }
+Screen.-short #studio-status { margin-top: 0; }
+Screen.-short #studio-description { margin-bottom: 0; }
+
+#run-inputs { height: auto; margin-bottom: 1; }
+#run-activity { height: auto; padding: 1; }
+#run-config { height: auto; }
+Screen.-compact #run-inputs { layout: vertical; }

@@ -1,0 +1,52 @@
+[coord]
+name = "gothpunk"
+label = "ゴスパン"
+dark = true
+wear = "Late sessions. The mascot's own fit: bone on violet-black, crimson only when money runs out."
+
+[palette]
+paper = "#0D0B11"
+panel = "#16131B"
+ink = "#E9E6EF"
+muted = "#A6A2B0"
+rule = "#4F4B57"
+focus = "#6C90FF"
+accent = "#FC4257"
+band_outer = "#31293F"
+band_inner = "#4D4671"
+median = "#E9E6EF"
+floor = "#FC4257"
+safe = "#C6B1F0"
+thin = "#EBC166"
+short = "#FC4257"
+inflow = "#C6B1F0"
+outflow = "#A6A2B0"
+opt_credit = "#7598FF"
+opt_liquidate = "#E3A6DD"
+opt_hybrid = "#E0DBEA"
+opt_protective = "#CFB656"
+stamp = "#FC4257"
+ornament = "#888491"
+
+[borders]
+panel = "solid"
+focus = "heavy"
+trim = "─o"
+title_left = "⸸ "
+title_right = ""
+
+[glyphs]
+gauge_on = "━"
+gauge_off = "╌"
+pick = "⸸"
+band_outer = "╳"
+voice_mark = "⸸"
+
+[motion]
+henshin_frames = 4
+henshin_ms = 240
+
+[voice]
+calm = "the floor holds for all {h} days. nothing owed to the dark."
+thin = "the floor gives at p95 on day {sol1}. {rlr} buys it back."
+short = "{sp} of paths go under. add {rlr}, or lose day {sol1}."

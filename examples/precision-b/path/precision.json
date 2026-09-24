@@ -1,0 +1,199 @@
+{
+  "schema": 1,
+  "complete": true,
+  "result": {
+    "summary": {
+      "cash_shortfall_probability": 0.38085937500000006,
+      "numerical_probability_interval": [
+        0.33122133270321513,
+        0.430497417296785
+      ],
+      "absolute_error_bound": 0.04963804229678492,
+      "requested_absolute_error": 0.05,
+      "confidence": 0.95,
+      "precision_met": true,
+      "stop_reason": "precision_reached",
+      "status": "precision_met",
+      "actual_n": 2048,
+      "interval_observations": 2048,
+      "method": "empirical-bernstein-alpha-spending-intersection-v2",
+      "model_identity": "ca33dde346290720cf5907affb60c4e9c354caf93986c61851bff66d705f32af"
+    },
+    "checkpoints": [
+      {
+        "n": 256,
+        "look": 1,
+        "estimate": 0.3515625,
+        "sample_variance": 0.22886029411764705,
+        "interval": [
+          0.2098640705152563,
+          0.4932609294847437
+        ],
+        "absolute_error_bound": 0.1416984294847437,
+        "error_allowance": 0.025000000000000022,
+        "log_error_allowance": -3.6888794541139354,
+        "raw_interval": [
+          0.2098640705152563,
+          0.4932609294847437
+        ]
+      },
+      {
+        "n": 512,
+        "look": 2,
+        "estimate": 0.359375,
+        "sample_variance": 0.23067514677103718,
+        "interval": [
+          0.2565983860299366,
+          0.4621516139700634
+        ],
+        "absolute_error_bound": 0.10277661397006338,
+        "error_allowance": 0.008333333333333342,
+        "log_error_allowance": -4.787491742782045,
+        "raw_interval": [
+          0.2565983860299366,
+          0.4621516139700634
+        ]
+      },
+      {
+        "n": 1024,
+        "look": 3,
+        "estimate": 0.3701171875,
+        "sample_variance": 0.2333583440249267,
+        "interval": [
+          0.2985099923932075,
+          0.4417243826067925
+        ],
+        "absolute_error_bound": 0.07160719510679248,
+        "error_allowance": 0.004166666666666671,
+        "log_error_allowance": -5.48063892334199,
+        "raw_interval": [
+          0.2985099923932075,
+          0.4417243826067925
+        ]
+      },
+      {
+        "n": 2048,
+        "look": 4,
+        "estimate": 0.38085937500000006,
+        "sample_variance": 0.23592070713238886,
+        "interval": [
+          0.33122133270321513,
+          0.430497417296785
+        ],
+        "absolute_error_bound": 0.04963804229678492,
+        "error_allowance": 0.002500000000000003,
+        "log_error_allowance": -5.991464547107981,
+        "raw_interval": [
+          0.33122133270321513,
+          0.430497417296785
+        ]
+      }
+    ],
+    "manifest": {
+      "version": 2,
+      "interval_method": "empirical-bernstein-alpha-spending-intersection-v2",
+      "checkpoint_schedule": [
+        256,
+        512,
+        1024,
+        2048,
+        4096
+      ],
+      "error_spending": "alpha/(k*(k+1)), k=1,2,...",
+      "scope": "numerical uncertainty of fixed historical model; not historical-data uncertainty or forecast calibration",
+      "config": {
+        "absolute_error": 0.05,
+        "confidence": 0.95,
+        "max_paths": 4096,
+        "batch_size": 256,
+        "chunk_size": 257,
+        "time_limit_seconds": 30.0,
+        "memory_budget_bytes": 134217728,
+        "stop_when_precise": true
+      },
+      "sampler": "mc",
+      "estimator": "path",
+      "metric_estimators": {
+        "cash_shortfall_probability": "path"
+      },
+      "root_seed": 42,
+      "replicate": 0,
+      "domain": 400,
+      "derived_seed": 11996532676759211332,
+      "seed_scheme": "SeedSequence([root, 400, 1, replicate]).uint64",
+      "bit_generator": "PCG64",
+      "mapping_version": 1,
+      "dimension": 7,
+      "material_horizon": 4,
+      "visible_horizon": 4,
+      "stream_layout": {
+        "version": 1,
+        "purpose": "cash_failure_precision",
+        "domain": 400,
+        "root_seed": 42,
+        "replicate": 0,
+        "derived_seed": 11996532676759211332,
+        "bit_generator": "PCG64",
+        "uniform_dtype": "float64",
+        "material_horizon": 4,
+        "dimension": 7,
+        "layout": "fixed-material C-order float64 rows v1",
+        "extension": "Path-count/chunk/worker/visible-horizon prefixes are stable within this material layout. A different material horizon is a different layout."
+      },
+      "block_requested": 7,
+      "block_resolved": 7,
+      "block_clipped": false,
+      "block_resolution": "explicit",
+      "input_hash": "a33a24c4f6ace89421801d736e27de7b7ea2dccb3d00629e0f32ffa3a1fd86cb",
+      "model_identity": "ca33dde346290720cf5907affb60c4e9c354caf93986c61851bff66d705f32af",
+      "synthetic_data_seed": null,
+      "index_hash": "d642f878ef9462b7231c110fb0d0f1e0cee601910b619157470d4a6966fe6a4d",
+      "initial_block_trace_hash": null,
+      "conditional_table_identity": null,
+      "execution": {
+        "backend": "numpy",
+        "workers": 1,
+        "block_size": 1024,
+        "memory_budget": 134217728
+      },
+      "actual_execution": {
+        "backend": "numpy",
+        "workers": 1,
+        "native": null
+      },
+      "effective_chunk_size": 257,
+      "unsupported_metrics": [
+        "reserve_quantile",
+        "CVaR",
+        "modeled_cost",
+        "importance_weighted_probability"
+      ],
+      "resource_boundary": "Cooperative deadline between batches; preparation and a running batch are not preempted.",
+      "environment": {
+        "python": "3.12.14",
+        "platform": "Linux-7.2.5-x86_64-with-glibc2.42",
+        "cpu": "Intel(R) Core(TM) Ultra 7 256V",
+        "dependencies": {
+          "numpy": "2.5.3",
+          "pandas": "3.0.5",
+          "scipy": "1.18.1",
+          "arch": "8.0.0",
+          "ginseng": "0.1.0"
+        },
+        "threads": {
+          "OMP_NUM_THREADS": null,
+          "OPENBLAS_NUM_THREADS": null,
+          "MKL_NUM_THREADS": null
+        },
+        "dtype": "float64",
+        "git_commit": "78b599e1508c6f8cc823762b70d9b13d874a3526",
+        "source_fingerprint": "7bb01259ce9293115ed88744b08f1c88bd8bbabfe578de653e6a812dc34e9243"
+      },
+      "result_hash": "1d3c1c0953830a2af992ff1d4acd3b955fe52d2871b6f3d549e4fc8e8deecc6b"
+    },
+    "core_seconds": 0.020340654002211522
+  },
+  "engine_sha256": "f87db344f0c41a8b64baa55483a69a8f261d875d78bdc7eba9a9cf68598e3475",
+  "trace": null,
+  "integrity": "43fb18a9fa8816a26a164ce36a6225fc92634bfe394d28c693eb8c0e789c4250"
+}

@@ -1,0 +1,52 @@
+[coord]
+name = "akira"
+label = "新東京 / Neo Tokyo"
+dark = true
+wear = "Anime city after dark. Charcoal asphalt, coral neon and amber signage."
+
+[palette]
+paper = "#191416"
+panel = "#2A2024"
+ink = "#F4EAF5"
+muted = "#B6A7C5"
+rule = "#70505A"
+focus = "#FFA09B"
+accent = "#FFD098"
+band_outer = "#2A2024"
+band_inner = "#70505A"
+median = "#F4EAF5"
+floor = "#FF777F"
+safe = "#77CCE6"
+thin = "#A484DA"
+short = "#FF777F"
+inflow = "#9EE1C0"
+outflow = "#B6A7C5"
+opt_credit = "#98C9FF"
+opt_liquidate = "#FFA09B"
+opt_hybrid = "#9EE1C0"
+opt_protective = "#F0D5A1"
+stamp = "#FF777F"
+ornament = "#FFA09B"
+
+[borders]
+panel = "heavy"
+focus = "heavy"
+trim = " // -- "
+title_left = "+ "
+title_right = " +"
+
+[glyphs]
+gauge_on = "━"
+gauge_off = "─"
+pick = ">"
+band_outer = "░"
+voice_mark = "+"
+
+[motion]
+henshin_frames = 4
+henshin_ms = 200
+
+[voice]
+calm = "* A quiet sky. {sp} of modeled paths cross below zero through day {h}."
+thin = "* A little care: add {rlr} at p95. {c0_name} costs about {c0}."
+short = "Shortfall in {sp} of modeled paths. At p95, cash lasts {sol} days. Add {rlr}."

@@ -1,0 +1,52 @@
+[coord]
+name = "seifuku"
+label = "制服"
+dark = false
+wear = "Daylight, README screenshots, anything you print. The brand ink, one spot color."
+
+[palette]
+paper = "#F8FAFE"
+panel = "#EAF0FD"
+ink = "#0100F4"
+muted = "#3B5EB2"
+rule = "#9EB7EB"
+focus = "#0100F4"
+accent = "#C21725"
+band_outer = "#D6E3FF"
+band_inner = "#A8C4FF"
+median = "#0100F4"
+floor = "#C21725"
+safe = "#0100F4"
+thin = "#703BA1"
+short = "#C21725"
+inflow = "#0100F4"
+outflow = "#173485"
+opt_credit = "#0030DB"
+opt_liquidate = "#3E66C1"
+opt_hybrid = "#021E7C"
+opt_protective = "#0126A3"
+stamp = "#C21725"
+ornament = "#809DDD"
+
+[borders]
+panel = "solid"
+focus = "double"
+trim = "═"
+title_left = "═╡ "
+title_right = " ╞═"
+
+[glyphs]
+gauge_on = "▰"
+gauge_off = "▱"
+pick = "▸"
+band_outer = "░"
+voice_mark = "▸"
+
+[motion]
+henshin_frames = 4
+henshin_ms = 240
+
+[voice]
+calm = "Reserve holds at p95 for all {h} days. Nothing to fund."
+thin = "Reserve needs {rlr} more to hold at p95. Cheapest fix: {c0_name}, about {c0}."
+short = "Shortfall likely. {sp} of paths dip below $0. At p95, cash lasts {sol} days. Add {rlr} to hold."

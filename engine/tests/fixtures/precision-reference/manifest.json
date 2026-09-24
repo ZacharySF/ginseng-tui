@@ -1,0 +1,10 @@
+{
+  "preparation": {
+    "tiny": {
+      "history_seconds": 0.0013064510003459873,
+      "tables_seconds": 6.320800093817525e-05,
+      "table_identity": "4672ea06c9268110fe4a7e7bdc4e1bf0f794700707907b5ea5d50cdb9a611319",
+      "block_length": 7
+    }
+  }
+}

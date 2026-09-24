@@ -1,0 +1,52 @@
+[coord]
+name = "gosurori"
+label = "ゴスロリ"
+dark = true
+wear = "Midnight vigil. Moonlit indigo on jet, ribboned in crosses; blood only when the coffin runs empty."
+
+[palette]
+paper = "#01050F"
+panel = "#040C1A"
+ink = "#E0E9F1"
+muted = "#849BB4"
+rule = "#303E4F"
+focus = "#51A9FF"
+accent = "#9291CE"
+band_outer = "#101E33"
+band_inner = "#203E64"
+median = "#E0E9F1"
+floor = "#EC3239"
+safe = "#77CCE6"
+thin = "#956ED2"
+short = "#EC3239"
+inflow = "#77CCE6"
+outflow = "#849BB4"
+opt_credit = "#43ACFB"
+opt_liquidate = "#A7BBF9"
+opt_hybrid = "#6588B6"
+opt_protective = "#CCE2EF"
+stamp = "#EC3239"
+ornament = "#7B9EB3"
+
+[borders]
+panel = "dashed"
+focus = "thick"
+trim = "✝┈"
+title_left = "☽ "
+title_right = " ☾"
+
+[glyphs]
+gauge_on = "⬥"
+gauge_off = "⬦"
+pick = "✝"
+band_outer = "⢕"
+voice_mark = "✝"
+
+[motion]
+henshin_frames = 4
+henshin_ms = 240
+
+[voice]
+calm = "✝ The vigil holds. Reserve stands through day {h}."
+thin = "✝ The lace frays at p95; the cheapest mend, {c0_name}, costs about {c0}."
+short = "☠ {sp} of paths fall past the veil; at p95 the money lasts {sol} days. Fund {rlr}."

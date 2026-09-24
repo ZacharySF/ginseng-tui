@@ -1,0 +1,52 @@
+[coord]
+name = "lain"
+label = "接続 / Wired"
+dark = true
+wear = "A late-night wired terminal. Green phosphor, pale cyan and dark circuitry."
+
+[palette]
+paper = "#0C1918"
+panel = "#172826"
+ink = "#F4EAF5"
+muted = "#B6A7C5"
+rule = "#3F655B"
+focus = "#A6E3AD"
+accent = "#8BD5CA"
+band_outer = "#172826"
+band_inner = "#3F655B"
+median = "#F4EAF5"
+floor = "#FF777F"
+safe = "#77CCE6"
+thin = "#A484DA"
+short = "#FF777F"
+inflow = "#9EE1C0"
+outflow = "#B6A7C5"
+opt_credit = "#98C9FF"
+opt_liquidate = "#A6E3AD"
+opt_hybrid = "#9EE1C0"
+opt_protective = "#F0D5A1"
+stamp = "#FF777F"
+ornament = "#A6E3AD"
+
+[borders]
+panel = "solid"
+focus = "solid"
+trim = " . : . : "
+title_left = "+ "
+title_right = " +"
+
+[glyphs]
+gauge_on = "━"
+gauge_off = "─"
+pick = ">"
+band_outer = "░"
+voice_mark = "+"
+
+[motion]
+henshin_frames = 4
+henshin_ms = 200
+
+[voice]
+calm = "* A quiet sky. {sp} of modeled paths cross below zero through day {h}."
+thin = "* A little care: add {rlr} at p95. {c0_name} costs about {c0}."
+short = "Shortfall in {sp} of modeled paths. At p95, cash lasts {sol} days. Add {rlr}."

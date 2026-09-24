@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "as_of": "2026-01-04",
+  "history_start": "2026-01-01",
+  "history_end": "2026-01-03",
+  "opening_cash": 30,
+  "buffer": 10,
+  "coverage_target": 0.95,
+  "horizon": 4,
+  "obligations": [
+    {
+      "day": 2,
+      "amount": 50
+    },
+    {
+      "day": 4,
+      "amount": 20
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-01-01",
+      "variable_income": 0,
+      "essential_spending": 30,
+      "discretionary_spending": 10
+    },
+    {
+      "date": "2026-01-02",
+      "variable_income": 50,
+      "essential_spending": 30,
+      "discretionary_spending": 10
+    },
+    {
+      "date": "2026-01-03",
+      "variable_income": 100,
+      "essential_spending": 20,
+      "discretionary_spending": 10
+    }
+  ]
+}

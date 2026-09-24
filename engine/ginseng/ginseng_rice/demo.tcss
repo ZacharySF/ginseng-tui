@@ -1,0 +1,4 @@
+/* Layout for the fitting-room demo only. Don't include this in your app. */
+Horizontal#top { height: 9; }
+#reserve { width: 38; }
+#ledger { height: 3; }

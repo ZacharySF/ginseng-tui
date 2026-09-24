@@ -1,0 +1,52 @@
+[coord]
+name = "rococo"
+label = "ロリータ"
+dark = false
+wear = "Month-end review. Ivory, chocolate, lace edges, a courteous voice."
+
+[palette]
+paper = "#FAF3E3"
+panel = "#F7E7D5"
+ink = "#4A291A"
+muted = "#745146"
+rule = "#CB9998"
+focus = "#A1405C"
+accent = "#3F704B"
+band_outer = "#F6D3D1"
+band_inner = "#EBAFB2"
+median = "#4A291A"
+floor = "#87112E"
+safe = "#2A617F"
+thin = "#8D5B1C"
+short = "#87112E"
+inflow = "#2C5E7A"
+outflow = "#745146"
+opt_credit = "#3F5D90"
+opt_liquidate = "#99415A"
+opt_hybrid = "#3A6343"
+opt_protective = "#735600"
+stamp = "#87112E"
+ornament = "#CB9998"
+
+[borders]
+panel = "round"
+focus = "double"
+trim = "◡"
+title_left = "❧ "
+title_right = ""
+
+[glyphs]
+gauge_on = "▮"
+gauge_off = "▯"
+pick = "❧"
+band_outer = "░"
+voice_mark = "❧"
+
+[motion]
+henshin_frames = 4
+henshin_ms = 240
+
+[voice]
+calm = "The ledger is in good order. The reserve stands through day {h}."
+thin = "The ledger wants {rlr} more to stand at p95. The cheapest remedy, {c0_name}, costs about {c0}."
+short = "Shortfall likely. {sp} of paths fall below $0; at p95 the money lasts {sol} days. Add {rlr}."

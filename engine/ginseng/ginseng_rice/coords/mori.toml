@@ -1,0 +1,52 @@
+[coord]
+name = "mori"
+label = "森ガール"
+dark = true
+wear = "The daily driver. Low chroma, long sessions, ginseng's own forest floor."
+
+[palette]
+paper = "#141F16"
+panel = "#1D291E"
+ink = "#E6E1D1"
+muted = "#ABAD97"
+rule = "#4D5A4A"
+focus = "#A9D69E"
+accent = "#E78070"
+band_outer = "#2B382B"
+band_inner = "#445A3F"
+median = "#E6E1D1"
+floor = "#E6715B"
+safe = "#85CFBB"
+thin = "#FAD86F"
+short = "#E6715B"
+inflow = "#85CFBB"
+outflow = "#ABAD97"
+opt_credit = "#83C9CC"
+opt_liquidate = "#E8B58D"
+opt_hybrid = "#CEDCA8"
+opt_protective = "#FFB4B3"
+stamp = "#E6715B"
+ornament = "#7F9070"
+
+[borders]
+panel = "round"
+focus = "round"
+trim = "╌"
+title_left = ""
+title_right = ""
+
+[glyphs]
+gauge_on = "⁙"
+gauge_off = "⁘"
+pick = "⸙"
+band_outer = "░"
+voice_mark = "⸙"
+
+[motion]
+henshin_frames = 4
+henshin_ms = 240
+
+[voice]
+calm = "plenty of shade: the reserve holds at p95 for all {h} days."
+thin = "a little thin: {rlr} more keeps 95% of paths above zero."
+short = "dry ground. {sp} of paths fall below zero; at p95 cash lasts {sol} days. add {rlr}."

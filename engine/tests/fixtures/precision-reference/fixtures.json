@@ -1,0 +1,102 @@
+{
+  "tiny": {
+    "name": "tiny",
+    "state": {
+      "as_of": "2026-01-04",
+      "transactions": [
+        {
+          "txn_date": "2026-01-01",
+          "transaction_type": "income_variable",
+          "amount": 0.0,
+          "label": "variable_income"
+        },
+        {
+          "txn_date": "2026-01-01",
+          "transaction_type": "expense_essential_variable",
+          "amount": 30.0,
+          "label": "essential_spending"
+        },
+        {
+          "txn_date": "2026-01-01",
+          "transaction_type": "expense_discretionary_variable",
+          "amount": 10.0,
+          "label": "discretionary_spending"
+        },
+        {
+          "txn_date": "2026-01-02",
+          "transaction_type": "income_variable",
+          "amount": 50.0,
+          "label": "variable_income"
+        },
+        {
+          "txn_date": "2026-01-02",
+          "transaction_type": "expense_essential_variable",
+          "amount": 30.0,
+          "label": "essential_spending"
+        },
+        {
+          "txn_date": "2026-01-02",
+          "transaction_type": "expense_discretionary_variable",
+          "amount": 10.0,
+          "label": "discretionary_spending"
+        },
+        {
+          "txn_date": "2026-01-03",
+          "transaction_type": "income_variable",
+          "amount": 100.0,
+          "label": "variable_income"
+        },
+        {
+          "txn_date": "2026-01-03",
+          "transaction_type": "expense_essential_variable",
+          "amount": 20.0,
+          "label": "essential_spending"
+        },
+        {
+          "txn_date": "2026-01-03",
+          "transaction_type": "expense_discretionary_variable",
+          "amount": 10.0,
+          "label": "discretionary_spending"
+        },
+        {
+          "txn_date": "2026-01-04",
+          "transaction_type": "transfer",
+          "amount": -10.0,
+          "label": "Opening cash reconciliation"
+        }
+      ],
+      "fixed_income_schedule": [],
+      "fixed_obligations": [],
+      "planned_discretionary_events": [],
+      "credit_accounts": [],
+      "holdings": [],
+      "operating_buffer": 10.0,
+      "coverage_target": 0.95,
+      "forecast_horizon": 4,
+      "portfolio_daily_returns": [],
+      "history_start": "2026-01-01",
+      "history_end": "2026-01-03",
+      "asset_daily_returns": [],
+      "roth_contribution_basis": 0.0
+    },
+    "obligations": [
+      {
+        "id": "0",
+        "label": "Known obligation",
+        "amount": 50.0,
+        "due_in_days": 2,
+        "transaction_type": "future_obligation",
+        "recurrence_days": null
+      },
+      {
+        "id": "1",
+        "label": "Known obligation",
+        "amount": 20.0,
+        "due_in_days": 4,
+        "transaction_type": "future_obligation",
+        "recurrence_days": null
+      }
+    ],
+    "data_seed": null
+  }
+}

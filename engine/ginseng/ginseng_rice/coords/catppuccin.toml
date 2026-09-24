@@ -1,0 +1,52 @@
+[coord]
+name = "catppuccin"
+label = "猫 / Catppuccin nights"
+dark = true
+wear = "A pastel cat cafe. Mocha paper, mauve accents and peach highlights."
+
+[palette]
+paper = "#1E1E2E"
+panel = "#242436"
+ink = "#F4EAF5"
+muted = "#B6A7C5"
+rule = "#585B70"
+focus = "#CBA6F7"
+accent = "#FAB387"
+band_outer = "#242436"
+band_inner = "#585B70"
+median = "#F4EAF5"
+floor = "#FF777F"
+safe = "#77CCE6"
+thin = "#A484DA"
+short = "#FF777F"
+inflow = "#9EE1C0"
+outflow = "#B6A7C5"
+opt_credit = "#98C9FF"
+opt_liquidate = "#CBA6F7"
+opt_hybrid = "#9EE1C0"
+opt_protective = "#F0D5A1"
+stamp = "#FF777F"
+ornament = "#CBA6F7"
+
+[borders]
+panel = "round"
+focus = "round"
+trim = " /\\_/\\  "
+title_left = "+ "
+title_right = " +"
+
+[glyphs]
+gauge_on = "━"
+gauge_off = "─"
+pick = ">"
+band_outer = "░"
+voice_mark = "+"
+
+[motion]
+henshin_frames = 4
+henshin_ms = 200
+
+[voice]
+calm = "* A quiet sky. {sp} of modeled paths cross below zero through day {h}."
+thin = "* A little care: add {rlr} at p95. {c0_name} costs about {c0}."
+short = "Shortfall in {sp} of modeled paths. At p95, cash lasts {sol} days. Add {rlr}."

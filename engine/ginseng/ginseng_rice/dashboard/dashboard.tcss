@@ -1,0 +1,14 @@
+/* Dashboard layout: 88x29 terminal including the footer. Every id is g- prefixed. */
+Dashboard { height: 1fr; }
+#g-row-top { height: 11; }
+#g-row-mid { height: 10; }
+#g-reserve { width: 32; }
+#g-paths, #g-troughs, #g-options { width: 1fr; }
+#g-ledger { height: 4; }
+
+/* Under 80 columns every panel stacks and the dashboard scrolls. */
+Dashboard.-narrow { overflow-y: auto; }
+Dashboard.-narrow #g-row-top, Dashboard.-narrow #g-row-mid { layout: vertical; height: auto; }
+Dashboard.-narrow #g-reserve { width: 1fr; height: 11; }
+Dashboard.-narrow #g-paths { height: 11; }
+Dashboard.-narrow #g-troughs, Dashboard.-narrow #g-options { height: 10; }

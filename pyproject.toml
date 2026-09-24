@@ -1,0 +1,45 @@
+[project]
+name = "ginseng-tui"
+version = "0.1.0"
+description = "Ginseng's standalone terminal research workspace"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "numpy>=2.1",
+    "pandas>=2.2",
+    "scipy>=1.14",
+    "arch>=7.2",
+    "textual>=8.2",
+    "pydantic>=2.10",
+    "httpx>=0.28",
+]
+
+[project.urls]
+Repository = "https://github.com/ZacharySF/ginseng-tui"
+Upstream = "https://github.com/nunera/ginseng"
+
+[project.scripts]
+ginseng-tui = "ginseng.tui:main"
+ginseng = "ginseng.cli:main"
+
+[project.optional-dependencies]
+optimization = ["cvxpy>=1.4"]
+research = ["matplotlib>=3.9"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["engine/ginseng"]
+
+[tool.pytest.ini_options]
+testpaths = ["engine/tests"]
+pythonpath = ["engine"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+    "colorspacious>=1.1.2",
+    "pytest-textual-snapshot>=1.0.0",
+]

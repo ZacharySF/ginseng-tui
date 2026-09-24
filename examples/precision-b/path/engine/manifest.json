@@ -1,0 +1,200 @@
+{
+  "schema": 1,
+  "complete": true,
+  "source": "history",
+  "visible_horizon": 4,
+  "material_horizon": 4,
+  "scalars": {
+    "opening_cash": 30.0,
+    "buffer": 0.0,
+    "coverage_target": 0.95
+  },
+  "full": false,
+  "model": {
+    "model_identity": "ca33dde346290720cf5907affb60c4e9c354caf93986c61851bff66d705f32af"
+  },
+  "execution": {
+    "backend": "numpy",
+    "reason": "Explicit selection.",
+    "workers": 1,
+    "block_size": 1024,
+    "input_bytes": 65640,
+    "output_bytes": 98304,
+    "scratch_bound_bytes": 327680,
+    "native": null,
+    "counters": {
+      "path_materializations": 0,
+      "row_reductions": 1,
+      "weight_normalizations": 1
+    },
+    "evaluation_seconds": 0.0007650609986740164
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-7.2.5-x86_64-with-glibc2.42",
+    "cpu": "Intel(R) Core(TM) Ultra 7 256V",
+    "dependencies": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "arch": "8.0.0",
+      "ginseng": "0.1.0"
+    },
+    "threads": {
+      "OMP_NUM_THREADS": null,
+      "OPENBLAS_NUM_THREADS": null,
+      "MKL_NUM_THREADS": null
+    },
+    "dtype": "float64",
+    "git_commit": "78b599e1508c6f8cc823762b70d9b13d874a3526",
+    "source_fingerprint": "7bb01259ce9293115ed88744b08f1c88bd8bbabfe578de653e6a812dc34e9243"
+  },
+  "metrics": {
+    "required_liquidity_reserve": 80.0,
+    "cash_shortfall_probability": 0.380859375,
+    "expected_max_cash_deficit": 20.4833984375,
+    "avg_cash_deficit_when_short": 53.782051282051285,
+    "funding_gap": 50.0,
+    "dollar_days_below_buffer": 40.0634765625,
+    "overdraft_dollar_days": 40.0634765625
+  },
+  "members": {
+    "input:history": {
+      "path": "input-history.npy",
+      "dtype": "<f8",
+      "shape": [
+        3,
+        3
+      ],
+      "nbytes": 72,
+      "file_bytes": 200,
+      "sha256": "4b5d5baefa9385bab68ef490b38cedc4bc9ecffd8a38112fd36ef7915e65185e"
+    },
+    "input:indices": {
+      "path": "input-indices.npy",
+      "dtype": "<i8",
+      "shape": [
+        2048,
+        4
+      ],
+      "nbytes": 65536,
+      "file_bytes": 65664,
+      "sha256": "7b339bf66f8125c5e1635b9ed6ab1c4c8770c53ddcb2fc4fe72a3f18c35591a0"
+    },
+    "input:direct": {
+      "path": "input-direct.npy",
+      "dtype": "<f8",
+      "shape": [
+        0,
+        0
+      ],
+      "nbytes": 0,
+      "file_bytes": 128,
+      "sha256": "4f7a75ba1f30ccc5743b356949f87a030833f6d0db3402d6ce7a35e0a659fb42"
+    },
+    "input:schedule": {
+      "path": "input-schedule.npy",
+      "dtype": "<f8",
+      "shape": [
+        4
+      ],
+      "nbytes": 32,
+      "file_bytes": 160,
+      "sha256": "3220efbe35baf38f19743c8a94286561faf07bc96efc40a80c1fba8f73358ab5"
+    },
+    "input:weights": {
+      "path": "input-weights.npy",
+      "dtype": "<f8",
+      "shape": [
+        2048
+      ],
+      "nbytes": 16384,
+      "file_bytes": 16512,
+      "sha256": "19d343b6ba797160db2e41c53f471248e2b745dc4e88bb154d018408f9c432be"
+    },
+    "output:stat_minima": {
+      "path": "output-stat_minima.npy",
+      "dtype": "<f8",
+      "shape": [
+        2048
+      ],
+      "nbytes": 16384,
+      "file_bytes": 16512,
+      "sha256": "be3a8c871efe2f558646c19613a3b0fbc5412ec22d0552a5a33d027e02fe0ec5"
+    },
+    "output:stat_terminal": {
+      "path": "output-stat_terminal.npy",
+      "dtype": "<f8",
+      "shape": [
+        2048
+      ],
+      "nbytes": 16384,
+      "file_bytes": 16512,
+      "sha256": "66f5bd862ce5f3baa0f3cfb5e8d9863417953203a368c57ea7a53e0282b72a20"
+    },
+    "output:stat_minimum_balance": {
+      "path": "output-stat_minimum_balance.npy",
+      "dtype": "<f8",
+      "shape": [
+        2048
+      ],
+      "nbytes": 16384,
+      "file_bytes": 16512,
+      "sha256": "0535b53bb2ee9c5827ecf1c82e64846492240d78a6fbf39a49c0a2c7db1ef433"
+    },
+    "output:stat_maximum_deficit": {
+      "path": "output-stat_maximum_deficit.npy",
+      "dtype": "<f8",
+      "shape": [
+        2048
+      ],
+      "nbytes": 16384,
+      "file_bytes": 16512,
+      "sha256": "3763423ada924c999fe264baadc4ec1f4eb86874eec1bce5add2d3ee86d48d9e"
+    },
+    "output:stat_buffer_dollar_days": {
+      "path": "output-stat_buffer_dollar_days.npy",
+      "dtype": "<f8",
+      "shape": [
+        2048
+      ],
+      "nbytes": 16384,
+      "file_bytes": 16512,
+      "sha256": "f31d71ec1b4bd5fc956ec65ccdd6a12934695ecc97e938cfb6306305f2bdaf3e"
+    },
+    "output:stat_overdraft_dollar_days": {
+      "path": "output-stat_overdraft_dollar_days.npy",
+      "dtype": "<f8",
+      "shape": [
+        2048
+      ],
+      "nbytes": 16384,
+      "file_bytes": 16512,
+      "sha256": "f31d71ec1b4bd5fc956ec65ccdd6a12934695ecc97e938cfb6306305f2bdaf3e"
+    },
+    "output:cash_failure": {
+      "path": "output-cash_failure.npy",
+      "dtype": "|u1",
+      "shape": [
+        2048
+      ],
+      "nbytes": 2048,
+      "file_bytes": 2176,
+      "sha256": "c613c066ce7295c9ca3afceed33109ad4a81bdcfddfdaa9bfdc3a90febca2d31"
+    },
+    "output:buffer_breach": {
+      "path": "output-buffer_breach.npy",
+      "dtype": "|u1",
+      "shape": [
+        2048
+      ],
+      "nbytes": 2048,
+      "file_bytes": 2176,
+      "sha256": "c613c066ce7295c9ca3afceed33109ad4a81bdcfddfdaa9bfdc3a90febca2d31"
+    }
+  },
+  "input_identity": "0dd157442895cd925e6054ce6552bc1e3ffc2ab8cd81405c23de509b6b5cb4f4",
+  "calculation_identity": "bb0ddd77068591a03834513ddb2dc10e0e0801c5be5239a3f3fc569e4d0e62f8",
+  "output_digest": "ba08e8d3fee8916e012107fc03171f20e36cf9b5a3f62d5356635020ebef4284",
+  "run_identity": "e7479b29b748d31423c8044d5f99c5e04755a0b621cb3c221a5662b358b4d39a"
+}

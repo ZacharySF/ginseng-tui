@@ -1,0 +1,39 @@
+{
+  "profile": "smoke",
+  "paths": [
+    256,
+    1024
+  ],
+  "replicates": 4,
+  "root_seed": 42,
+  "cases": [
+    "tiny",
+    "smooth",
+    "canonical",
+    "zero-heavy",
+    "drought-heavy"
+  ],
+  "methods": [
+    "mc",
+    "sobol",
+    "legacy_mc"
+  ],
+  "reference_paths": 16384,
+  "reference_batch": 16384,
+  "block_length": 14,
+  "tolerances": {
+    "default": {
+      "required_liquidity_reserve": 50,
+      "cash_shortfall_probability": 0.005,
+      "expected_max_cash_deficit": 5
+    },
+    "tiny": {
+      "required_liquidity_reserve": 5,
+      "cash_shortfall_probability": 0.005,
+      "expected_max_cash_deficit": 0.5
+    },
+    "smooth": {
+      "integral": 0.0001
+    }
+  }
+}

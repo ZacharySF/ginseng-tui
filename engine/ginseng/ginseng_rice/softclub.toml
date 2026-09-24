@@ -1,0 +1,51 @@
+[coord]
+name = "softclub"
+label = "soft club"
+dark = true
+
+[palette]
+paper = "#090C0D"
+panel = "#101516"
+ink = "#CFD5D2"
+muted = "#929E9B"
+rule = "#2A3433"
+focus = "#91CBB3"
+accent = "#A6B8B3"
+band_outer = "#192C28"
+band_inner = "#3D5C52"
+median = "#CFD5D2"
+floor = "#D58493"
+safe = "#94C5D7"
+thin = "#DBC491"
+short = "#D58493"
+inflow = "#A4C3AD"
+outflow = "#929E9B"
+opt_credit = "#91CBB3"
+opt_liquidate = "#B8ACC9"
+opt_hybrid = "#A4C3AD"
+opt_protective = "#DBC491"
+stamp = "#D58493"
+ornament = "#929E9B"
+
+[borders]
+panel = "solid"
+focus = "solid"
+trim = "─"
+title_left = ""
+title_right = ""
+
+[glyphs]
+gauge_on = "━"
+gauge_off = "─"
+pick = ">"
+band_outer = "░"
+voice_mark = "/"
+
+[motion]
+henshin_frames = 0
+henshin_ms = 0
+
+[voice]
+calm = "{sp} of modeled paths cross below zero through day {h}."
+thin = "Reserve check / add {rlr} at p95. {c0_name} costs about {c0}."
+short = "Shortfall in {sp} of modeled paths. At p95, cash lasts {sol} days. Add {rlr}."
