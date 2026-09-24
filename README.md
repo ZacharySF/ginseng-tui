@@ -1,10 +1,10 @@
 # Ginseng TUI
 
-A terminal workspace for cash-flow simulation and quantitative research. Near-black surfaces, silver text, mint accents, a liquid wireframe study, and the original Braille portrait.
+A terminal workspace for cash-flow simulation and quantitative research. N
 
 ![Ginseng TUI showing the soft club home workspace, liquid study, workflow table, and cyberpunk portrait](docs/images/ginseng-tui.png)
 
-This standalone edition contains the TUI and the local Python engine that powers its workflows. It runs without an account or server. Extracted from [Ginseng](https://github.com/nunera/ginseng), with Zachary Stubbs' current interface customizations.
+This standalone edition contains the TUI and the local Python engine that powers its workflows. It runs without an account or server. Extracted from [Ginseng](https://github.com/nunera/ginseng),
 
 ## Run
 
