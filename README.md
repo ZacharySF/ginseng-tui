@@ -1,6 +1,6 @@
 # Ginseng TUI
 
-A terminal workspace for cash-flow simulation and quantitative research. N
+A terminal workspace for cash-flow simulation and quantitative research.
 
 ![Ginseng TUI showing the soft club home workspace, liquid study, workflow table, and cyberpunk portrait](docs/images/ginseng-tui.png)
 
